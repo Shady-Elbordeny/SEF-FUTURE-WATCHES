@@ -1,12 +1,122 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="utf-8" />
-  <title>Template 2</title>
+  <title>HCI PROJECT</title>
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css" />
+  <style>
+    nav {
+      background-color: #1b161a;
+    }
+
+    nav img {
+      width: 10%;
+    }
+
+    nav .navbar-toggler {
+      background-color: #f5b16c;
+    }
+
+    nav .offcanvas {
+      background-color: #1b161a;
+    }
+
+    .offcanvas-title img {
+      width: 45%;
+    }
+
+    .navbar-toggler-icon {
+      color: #1b161a;
+    }
+
+    .nav-link {
+      color: #ddd;
+      transition: .5s;
+    }
+
+    .nav-link:hover {
+      color: #f5b16c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-size: 100% 100%;
+      background: #1b161a;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <img src="images/شعار نادي رياضى بلون اصفر .png" alt="logo" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <img src="images/شعار نادي رياضى بلون اصفر .png"
+              alt="logo" /></div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Watches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Boutiqes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">More</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Watches
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">hublot watch</a></li>
+                <li><a class="dropdown-item" href="#">hublot watch</a></li>
+                <li><a class="dropdown-item" href="#">hublot watch</a></li>
+                <li><a class="dropdown-item" href="#">hublot watch</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"> More hublot watch</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <header>
     <div class="container">
       <div class="header-info">
         <img src="images/شعار نادي رياضى بلون اصفر .png" alt="logo" />
@@ -54,7 +164,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
   <section class="main">
     <div class="container">
       <div class="main-watch">
@@ -204,7 +314,7 @@
             <div class="product-img">
               <img src="images/watch-13.png" alt="">
             </div>
-              <div class="product-overlay">
+            <div class="product-overlay">
               <img src="images/14.png" alt="">
             </div>
             <div class="product-text">
@@ -215,9 +325,10 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="images/classic-fusion-aerofusion-king-gold-bracelet-45-mm-528.OX.0180.OX-soldier-shot.png" alt="">
+              <img src="images/classic-fusion-aerofusion-king-gold-bracelet-45-mm-528.OX.0180.OX-soldier-shot.png"
+                alt="">
             </div>
-              <div class="product-overlay">
+            <div class="product-overlay">
               <img src="images/pngaaa.com-4653216.png" alt="">
             </div>
             <div class="product-text">
@@ -226,8 +337,6 @@
               <button class="buy">buy</button>
             </div>
           </div>
-        </div>
-        <div class="products-2">
           <div class="product-item">
             <div class="product-img">
               <img src="images/classic-fusion-aerofusion-black-magic-45-mm-soldier-shot (1).png" alt="">
@@ -241,24 +350,24 @@
               <button class="buy">buy</button>
             </div>
           </div>
-            <div class="product-item">
-              <div class="product-img">
-                <img src="images/watch-22.png" alt="">
-              </div>
-              <div class="product-overlay">
-                <img src="images/watch-23.png" alt="">
-              </div>
-              <div class="product-text">
-                <h1>Hublot</h1>
-                <p>$15,000</p>
-                <button class="buy">buy</button>
-              </div>
+          <div class="product-item">
+            <div class="product-img">
+              <img src="images/watch-22.png" alt="">
             </div>
+            <div class="product-overlay">
+              <img src="images/watch-23.png" alt="">
+            </div>
+            <div class="product-text">
+              <h1>Hublot</h1>
+              <p>$15,000</p>
+              <button class="buy">buy</button>
+            </div>
+          </div>
           <div class="product-item">
             <div class="product-img">
               <img src="images/watch-20.png" alt="">
             </div>
-              <div class="product-overlay">
+            <div class="product-overlay">
               <img src="images/watch-21.png" alt="">
             </div>
             <div class="product-text">
@@ -270,5 +379,7 @@
         </div>
       </div>
   </section>
+  <script src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
